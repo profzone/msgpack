@@ -1,3 +1,3 @@
-module github.com/longhorn/msgpack
+module github.com/profzone/msgpack
 
 go 1.14
