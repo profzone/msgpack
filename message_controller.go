@@ -17,6 +17,10 @@ type MessageController struct {
 	packer MessagePack
 }
 
+func NewMessageController(pack MessagePack) *MessageController {
+	return &MessageController{pack}
+}
+
 func (mc *MessageController) ReadMessage(reader io.Reader, message interface{}) error {
 	if mc.packer == nil {
 		panic("message packer not initialized")
